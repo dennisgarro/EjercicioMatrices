@@ -11,8 +11,14 @@ public class Menu {
         int[][] ME = new int[n][n];
         ObjMatriz[][] MO = new ObjMatriz[n][n];
         while (continuar) {
-            System.out.println("Que desea realizar 1: llenar matriz de enteros"
-                    + "2 Mostrar Matriz de enteros, 3 Llenar matriz Objetual 4 Mostrar matriz Objetual");
+            System.out.println("Que desea realizar");
+            System.out.println("1: llenar matriz de enteros");
+            System.out.println("2: mostrar matriz de enteros");
+            System.out.println("3: llenar matriz de objetos");
+            System.out.println("4: mostrar matriz de objetos");
+            System.out.println("5: mostrar numeros pares de la matriz de enteros");
+            System.out.println("6: salir");
+                    
             int opt = sc.nextInt();
             switch (opt) {
                 case 1:
@@ -28,6 +34,9 @@ public class Menu {
                     m.MostrarMatrizObjetual(MO);
                     break;
                 case 5:
+                    m.MostrarPar(ME);
+                    break;
+                case 6:
                     System.out.println("hasta luego");
                     continuar = false;
                     break;
