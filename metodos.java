@@ -46,4 +46,16 @@ public class metodos {
             System.out.println();
         }
     }
+
+    public void MostrarPar(int[][] m){
+        for (int i = 0; i < m.length; i++) {
+            for (int j = 0; j < m.length; j++) {
+                if(m[i][j] % 2 == 0){
+                    System.out.print(" - " + m[i][j]);
+                }
+            }
+            System.out.println();
+        }
+
+    }
 }
