@@ -40,6 +40,9 @@ public class Menu {
                     System.out.println("hasta luego");
                     continuar = false;
                     break;
+                case 7:
+                    m.MostrarImpar(ME);
+                    break;
 
                 default:
                     System.out.println("esa opcion no existe por favor validar...");
